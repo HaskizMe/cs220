@@ -109,9 +109,11 @@ img {vertical-align: middle;}
       }
 /*Formatting for the header of the page*/
       .header{
+        color: #ffffff;
         background-color: #6b7178;
         padding: 15px;
         text-align: center;
+        background-image: linear-gradient(to right, black, white);
       }
 /*Format for the navigation bar at the top of page*/
      .topnav{
@@ -149,6 +151,7 @@ img {vertical-align: middle;}
   position:absolute;
   float: left;
 }
+
 </style>
 </head>
 <body>
@@ -170,22 +173,28 @@ img {vertical-align: middle;}
 <div class="slideshow-container">
   <!-- Link for audi image -->
 <div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
+  <div class="numbertext">1 / 4</div>
   <img src="audi.jpg" style="width:100%">
   <div class="text">Audi</div>
 </div>
 <!-- link for toyota image -->
 <div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
+  <div class="numbertext">2 / 4</div>
   <img src="toyota.jpg" style="width:100%">
   <div class="text">Toyota</div>
 
 </div>
 <!-- link for Range Rover image -->
 <div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
+  <div class="numbertext">3 / 4</div>
   <img src="rangerover.jpg" style="width:100%">
   <div class="text">Range Rover</div>
+</div>
+<!-- link for Jeep image -->
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="jeep.jpg" style="width:100%">
+  <div class="text">Jeep Wrangler</div>
 </div>
 <!-- the right and left arrow buttons -->
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -198,6 +207,8 @@ img {vertical-align: middle;}
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+
 </div>
 
 <script>
