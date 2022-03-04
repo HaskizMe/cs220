@@ -3,19 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>Header</title>
+
+    <style>
+      body{
+        background-color: black;
+      }
+      .text{
+        color: white;
+      }
+    </style>
   </head>
   <body>
-    <p>test</p>
-    <p id="demo"></p>
+    <div class="text">
+      <h1>This page will test if a string is blank or not.</h1>
+    </div>
 <script>
-  const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
-
-let text = "";
-for (let i = 0; i < cars.length; i++) {
-  text += cars[i] + "<br>";
+is_Blank = function(input) {
+if (input.length === 0)
+return true;
+else
+return false;
 }
-
-document.getElementById("demo").innerHTML = text;
+console.log("My string will be blank for this one.");
+console.log(is_Blank(''));
+console.log("My string will have 'abc' in it.");
+console.log(is_Blank('abc'));
 </script>
     </body>
 </html>
