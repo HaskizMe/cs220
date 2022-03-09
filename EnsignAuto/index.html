@@ -151,7 +151,35 @@ img {vertical-align: middle;}
   position:absolute;
   float: left;
 }
+/*Background for the page*/
+body{
+  background: black;
+}
+.column-left{
+  float: left;
+  width: 20%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.column-right{
+  float: right;
+  width: 70%;
+  margin-left: 10px;
+  margin-right: 100px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.font-size{
+  font-size: 125%;
+}
+.font-color-white{
+  background: -webkit-linear-gradient(#3acdf2, #3a50f2);
+  -webkit-background-clip: text;
 
+ -webkit-text-fill-color: transparent;
+}
 </style>
 </head>
 <body>
@@ -169,6 +197,19 @@ img {vertical-align: middle;}
     <a href="">Contact Information</a>
 
     </div>
+<div class="column-left">
+  <div class="font-size">
+    <div class="font-color-white">
+
+  <h1>Ensign Auto has been providing our local community with top-notch cars and service since 2022. Whatever you need we have it! </h1>
+</div>
+
+</div>
+
+</div>
+
+<div class="column-right">
+
   <!-- Slideshow links -->
 <div class="slideshow-container">
   <!-- Link for audi image -->
@@ -193,7 +234,7 @@ img {vertical-align: middle;}
 <!-- link for Jeep image -->
 <div class="mySlides fade">
   <div class="numbertext">4 / 4</div>
-  <img src="jeep.jpg" style="width:100%">
+  <img src="jeep2.jpg" style="width:100%">
   <div class="text">Jeep Wrangler</div>
 </div>
 <!-- the right and left arrow buttons -->
@@ -208,6 +249,8 @@ img {vertical-align: middle;}
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
   <span class="dot" onclick="currentSlide(4)"></span>
+
+</div>
 
 </div>
 
