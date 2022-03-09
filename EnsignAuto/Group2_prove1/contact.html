@@ -1,0 +1,454 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact Us</title>
+	
+	<style>
+	
+	* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  /* padding: 10px; */
+  /* background: #f1f1f1; */
+}
+
+/* Header/Blog Title */
+		/*Formatting for the header of the page*/
+      .header{
+        color: #ffffff;
+        background-color: #6b7178;
+        padding: 15px;
+        text-align: center;
+        background-image: linear-gradient(to right, black, white);
+      }
+/*Format for the navigation bar at the top of page*/
+     .topnav{
+        display: block;
+        background-color: black;
+        padding: 12px;
+        overflow: hidden;
+
+      }
+/*Formatting the links in the navigation bar*/
+      .topnav a {
+        float: left;
+        display:block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+		}
+		
+    .topnav a:hover{
+        background-color: white;
+        color: black;
+      }
+      /* Centered section inside the top navigation */
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-left{
+  position:absolute;
+  float: left;
+}
+/*Background for the page*/
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 35%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 65%;
+  /* background-color: #f1f1f1; */
+  padding-left: 20px;
+}
+		
+		.center_column {
+			float:left;
+			width: 100%;
+			/* background-color: #f1f1f1; */
+            padding-left: 20px;
+		}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+		
+.input-row {
+
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 5%;
+	margin-right: 60%;
+}
+		
+		.input-row .input-group {
+			flex-basis: 45%;
+		}
+
+		    input {
+			width: 100%;
+			margin-top: 10px;
+			margin-bottom: 5px;
+			border: none;
+			border-bottom: 1px solid #ccc;
+			outline: none;
+			padding-bottom: 2px;
+			
+		}
+		
+		#H {
+		    width:auto;
+		}
+		
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+  /*referenced from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow*/
+  * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*Formatting for the body of the page*/
+      body{
+        margin: 0;
+        background-color: white;
+      }
+/*Formatting for the header of the page*/
+      .header{
+        color: #ffffff;
+        background-color: #6b7178;
+        padding: 15px;
+        text-align: center;
+        background-image: linear-gradient(to right, black, white);
+      }
+/*Format for the navigation bar at the top of page*/
+     .topnav{
+        display: block;
+        background-color: black;
+        padding: 12px;
+        overflow: hidden;
+
+      }
+/*Formatting the links in the navigation bar*/
+      .topnav a {
+        float: left;
+        display:block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+
+      }
+
+/*Formatting the hovering motions for navigation bar*/
+      .topnav a:hover{
+        background-color: white;
+        color: black;
+      }
+      /* Centered section inside the top navigation */
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-left{
+  position:absolute;
+  float: left;
+}
+/*Background for the page*/
+body{
+  background: black;
+}
+.column-left{
+  float: left;
+  width: 20%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.column-right{
+  float: right;
+  width: 70%;
+  margin-left: 10px;
+  margin-right: 100px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.font-size{
+  font-size: 125%;
+}
+.font-color-white{
+  background: -webkit-linear-gradient(#3acdf2, #3a50f2);
+  -webkit-background-clip: text;
+
+ -webkit-text-fill-color: transparent;
+}
+	
+	</style>
+	
+</head>
+
+<body>
+	
+	
+		 <div class="header">
+    <div class="header-left">
+      <img src="./indexImages/logo.png" alt="logo" style width="100" height="80">
+    </div>
+    <h1>Ensign Auto</h1>
+</div>
+<!-- navigation bar -->
+    <div class="topnav">
+    <a href="index.html"> Home</a>
+    <a href="inventory.html"> Inventory</a>
+    <a href="contact.html">Contact Us</a>
+
+    </div>
+	
+	
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>ENSIGN AUTO</h2>
+      <p>95 N 300 W, </p>
+      <p>Salt Lake City, UT  84101</p>
+      <h5>101-101-1001</h5>
+    </div>
+    <div class="card" id="H">
+      <h2>HOURS OF OPERATION</h2>
+      <h5>Store Hours:</h5>
+      	<p>Monday:	     10:00 am - 8:00 pm</p>
+		<p>Tuesday:	     10:00 am - 8:00 pm</p>
+		<p>Wednesday:	     10:00 am - 8:00 pm</p>
+		<p>Thursday:	     10:00 am - 8:00 pm</p>
+		<p>Friday:	     10:00 am - 8:00 pm</p>
+		<p>Saturday:	     10:00 am - 8:00 pm</p>
+		<p>Sunday:	     Closed</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>CONTACT US</h2>
+      <p> Put your information to get an answer of our team.</p>
+		
+	<form>
+		
+		<div class ="input-row">
+		<div class="input-group">
+			<label>First Name:</label>
+			<input type="text" placeholder="Ej.: Carl">
+			</div>
+			
+			<div class="input-group">
+			<label>Last Name:</label>
+			<input type="text" placeholder="Ej.: Jhonson">
+			</div>
+			
+			
+			<div class="input-group">
+			<label>City/State/ Zip:</label>
+			<input type="text" placeholder="City">
+			<input type="text" placeholder="State">
+			<input type="text" placeholder="Zip">
+			</div>
+			
+			
+			<div class="input-group">
+			<label>Phone:</label>
+			<input type="text" placeholder="###-###-####">
+			</div>
+			
+			<div class="input-group">
+			<label>Email:</label>
+			<input type="text" placeholder="example@example.com">
+			</div>
+			
+			<div class="Q" >
+			<label>Comments or Questions:</label>
+			<input class ="CoQ" type="text" placeholder="How may we help you?">
+			</div>
+			
+		</div>
+		
+		<button calss="buttom">Submit</button>
+		
+		</form>
+      
+    </div>
+	  </div>
+</div>
+  
+	  <div class="center_column">
+	<div class="card">
+		<h2 class="mapL">Find our store in the Map.</h2>
+	<div class="mapouter">
+		<div class="gmap_canvas">
+			<iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Ensign%20Colllege&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+			</iframe>
+			<a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a>
+			<br>
+			<style>
+				.mapouter{
+					position:relative;
+					text-align:center;
+					height:500px;
+					width:100%;
+				}
+			</style>
+			<a href="https://www.embedgooglemap.net">google map on web page</a>
+			
+			<style>
+			
+			.gmap_canvas {
+				overflow:hidden;
+				background:none!important;
+				height:500px;
+				width:100%;
+				}
+			</style>
+		</div>
+	</div>
+	  </div>
+	  </div>
+	 
+</body>
+</html>
+
