@@ -3,8 +3,11 @@
 body {
 margin: auto;
 padding: auto;
-background-color: white;
+background-color: blue;
 font-family: Garamond (serif);
+}
+.my-bg-color{
+  background-color: blue; 
 }
 .center{
 display: block;
